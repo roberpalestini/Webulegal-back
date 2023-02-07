@@ -1,0 +1,1 @@
+function f(t){if(!Array.isArray(t))throw new Error("Input must be array.")}function u(t,r){let n=o(t);return a(n);function o(e){return e.split(".")}function a(e){for(let i=0,l=e.length;i<l;++i)r=r[e[i]];return r}}function p(t,r){f(r),!(r.length<2)&&r.sort((n,o)=>{let a=u(t,n),e=u(t,o);return String(a)<String(e)?-1:1})}export{p as a};
